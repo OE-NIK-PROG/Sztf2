@@ -13,7 +13,7 @@
 
 
 ## Részletes menetrend
-1. - [x] Dictionary (szept. 11-15.)
+1. - [x] OOP Ismétlés (szept. 11-15.)
 2. - [ ] Öröklés (szept. 18-22.)
 3. - [ ] Interface (szept. 25-29.)
 4. - [ ] Esemény (okt. 2-6.)
