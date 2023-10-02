@@ -15,7 +15,7 @@
 ## Részletes menetrend
 1. - [x] OOP Ismétlés (szept. 11-15.)
 2. - [x] Öröklés (szept. 18-22.)
-3. - [ ] Interface (szept. 25-29.)
+3. - [x] Interface (szept. 25-29.)
 4. - [ ] Esemény (okt. 2-6.)
 5. - [ ] Kivétel (okt. 9-13.)
 6. - [ ] Backtrack (okt. 16-20.)
