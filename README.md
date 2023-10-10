@@ -16,7 +16,7 @@
 1. - [x] OOP Ismétlés (szept. 11-15.)
 2. - [x] Öröklés (szept. 18-22.)
 3. - [x] Interface (szept. 25-29.)
-4. - [ ] Esemény (okt. 2-6.)
+4. - [x] Esemény (okt. 2-6.)
 5. - [ ] Kivétel (okt. 9-13.)
 6. - [ ] Backtrack (okt. 16-20.)
 7. - [ ] Git/Lista + ZH !!!! (okt. 24-27.    OKTOBER 27 - ELSO ZH)
