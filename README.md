@@ -11,6 +11,9 @@
  
   4. 4 órát lehet hianyozni, ennél több hiányzásnál "Letiltva" bejegyzést fog kapni. HIÁNYZÁST nem lehet pótolni.
 
+### Elérhetőség
+
+email: vekony.martin@uni-obuda.hu
 
 ## Részletes menetrend
 1. - [x] OOP Ismétlés (szept. 11-15.)
