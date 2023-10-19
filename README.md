@@ -21,7 +21,7 @@ email: vekony.martin@uni-obuda.hu
 3. - [x] Interface (szept. 25-29.)
 4. - [x] Esemény (okt. 2-6.)
 5. - [x] Kivétel (okt. 9-13.)
-6. - [ ] Backtrack (okt. 16-20.)
+6. - [x] Backtrack (okt. 16-20.)
 7. - [ ] Git/Lista + ZH !!!! (okt. 24-27.    OKTOBER 27 - ELSO ZH)
 8. - [ ] Lista (okt. 30. - nov. 3.)
 9. - [ ] Bináris fa (nov. 6-10.)
