@@ -29,3 +29,7 @@ email: vekony.martin@uni-obuda.hu
 11. - [ ] Hash (nov. 24- dec. 1.)
 12. - [ ] Gráf 2 + ZH (dec. 4-8.        DECEMBER 8. - MASODIK ZH)
     - [ ] Gyakorlás + POT ZH     (DECEMBER15. - POT ZH)
+
+### Camel Case / Pascal Case
+
+Hivatalos leírás, hogy hogyan kell elnevezni a dolgokat a forráskódban, illetve mikre kell odafigyelni - [Microsoft Doc](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
