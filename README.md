@@ -36,4 +36,4 @@ Hivatalos leírás, hogy hogyan kell elnevezni a dolgokat a forráskódban, ille
 
 ### Házi help
 
-Itt láthatjátok hogyan kell saját Compare-t írni string-re >> (String Compare)[https://www.c-sharpcorner.com/UploadFile/mahesh/compare-strings-in-C-Sharp/]
+Itt láthatjátok hogyan kell saját Compare-t írni string-re >> [String Compare](https://www.c-sharpcorner.com/UploadFile/mahesh/compare-strings-in-C-Sharp/)
