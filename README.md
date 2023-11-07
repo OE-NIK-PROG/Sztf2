@@ -33,3 +33,7 @@ email: vekony.martin@uni-obuda.hu
 ### Camel Case / Pascal Case
 
 Hivatalos leírás, hogy hogyan kell elnevezni a dolgokat a forráskódban, illetve mikre kell odafigyelni - [Microsoft Doc](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
+
+### Házi help
+
+Itt láthatjátok hogyan kell saját Compare-t írni string-re >> (String Compare)[https://www.c-sharpcorner.com/UploadFile/mahesh/compare-strings-in-C-Sharp/]
