@@ -54,5 +54,15 @@ namespace Hazi.classes
                 default : return false;
             }
         }
+        public override string ToString()
+        {
+            return ToString(this.Root);
+        }
+
+        private string ToString(Node node)
+        {
+            // Postorder bejárása
+            return "";
+        }
     }
 }
