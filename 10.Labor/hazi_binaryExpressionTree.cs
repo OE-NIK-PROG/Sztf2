@@ -37,7 +37,9 @@ namespace Hazi.classes
                 }
             }
 
-            return null;
+            BinaryExpressionTree rootTree = new BinaryExpressionTree(stack.Pop());
+
+            return rootTree;
         }
 
         private static bool CheckOperand(char v)
