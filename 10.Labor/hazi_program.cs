@@ -7,7 +7,7 @@ namespace Hazi
     {
         static void Main(string[] args)
         {
-            BinaryExpressionTree.Build("2+3*4");
+            BinaryExpressionTree binfa = BinaryExpressionTree.Build("2+3*4");
             
             /*BinaryExpressionTree binfa =
                 new BinaryExpressionTree(new OperandNode('+',
