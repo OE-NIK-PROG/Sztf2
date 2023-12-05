@@ -1,17 +1,12 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace minta_zh
+namespace zh_gyak
 {
-    internal class TermekTarolo<T>  where T : Termek /*where K : class, IComparable<K>*/
+    public class TermekTarolo<T> where T: Termek
     {
-
         private ListaElem fej;
-        public event ArValtozasDelegate ArValtozas;
 
         // ------------------------------------
         // NESTED CLASS
@@ -29,19 +24,18 @@ namespace minta_zh
         }
         // ------------------------------------
 
-        public TermekTarolo() { ArValtozas += Felvetel; }
+        public TermekTarolo() { }
 
         public void TermekFelvetele(T elem)
         {
-            elem.ArValtozes += TermekValtozas;
+            //elem.ArValtozes += TermekValtozas;
             TermekFelvetele(ref fej, (elem as Termek).Ar, elem);
         }
 
-        private void TermekFelvetele(ref ListaElem fej, int kulcs ,T elem)
+        private void TermekFelvetele(ref ListaElem fej, int kulcs, T elem)
         {
             // Elem beszurasa rendezett listaba
             // https://users.nik.uni-obuda.hu/sztf2/LancoltListak.pdf  -> 21. oldal
-
 
             ListaElem uj = new ListaElem();
             uj.tartalom = elem;
@@ -71,6 +65,7 @@ namespace minta_zh
                         e = p;
                         p = p.kovetkezo;
                     }
+
                     if (p == null)
                     {
                         uj.kovetkezo = null;
@@ -84,12 +79,8 @@ namespace minta_zh
                 }
             }
 
-            TermekValtozas();
-        }
-
-        private void TermekValtozas()
-        {
-            ArValtozas?.Invoke();
+            elem.ArValtozes += elem.Felvetel;
+            elem. ArValtozasFigyelo();
         }
 
         public void Bejaras()
@@ -108,51 +99,36 @@ namespace minta_zh
             return ListabanKereses(this, maximumAr);
         }
 
-        private TermekTarolo<T> ListabanKereses(TermekTarolo<T> szurtLista,  int maximumAr)
+        private TermekTarolo<T> ListabanKereses(TermekTarolo<T> lista,  int maximumAr)
         {
-            ListaElem p = szurtLista.fej;
+            TermekTarolo<T> szurtLista = new TermekTarolo<T>();
+            
+            ListaElem p = lista.fej;
 
-            while (p != null && p.kulcs <= maximumAr)
+            while (p != null)
             {
-                szurtLista.TermekFelvetele(p as T);
+                if (p.kulcs <= maximumAr)
+                {
+                    T szurtElem = p.tartalom;
+                    szurtLista.TermekFelvetele(szurtElem);
+                }
                 p = p.kovetkezo;
                 
             }
-            if (p == null)
+            if (szurtLista.fej != null)
+            {
+                
+                return szurtLista;
+            }
+            else
             {
                 throw new Exception("Nincs ilyen termek");
             }
-
-            return szurtLista;
         }
 
         private void Feldolgoz(ListaElem p)
         {
-            Console.WriteLine(">> " + p);
+            Console.WriteLine("Termek" + p);
         }
-
-        private void Felvetel()
-        {
-            Console.WriteLine("Termeket felvetelre kerult!");
-        }
-
-
-        #region with K generic type
-        //public int CompareTo(K obj1)
-        //{
-        //    if (this.fej.kulcs.CompareTo(obj1) > 0)
-        //    {
-        //        return 1;
-        //    }
-        //    else if (this.fej.kulcs.CompareTo(obj1) < 0)
-        //    {
-        //        return -1;
-        //    }
-        //    else
-        //    {
-        //        return 0;
-        //    }
-        //}
-        #endregion
     }
 }
